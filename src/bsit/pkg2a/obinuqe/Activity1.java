@@ -11,7 +11,7 @@ public class Activity1 {
      String name;
      int subjects, grade;
      float sum=0;
-     float average=0;
+     
      
      System.out.print("Enter Student Name: ");
      name = input.nextLine();
@@ -24,13 +24,13 @@ public class Activity1 {
             System.out.print("Enter grade for sub"+x+":");
             grade = input.nextInt();
             
-            sum = sum + grade;
+            sum += grade;
             
         }
-    average = sum/sum;
+          System.out.println("Total Average: "+(sum/subjects));
     
-    if(average>=92.33){
-        System.out.print("Remarks: PASSED");
+    if(sum/subjects>=75){
+        System.out.println("Remarks: PASSED");
     }else{
         System.out.println("Remarks: FAILED");
     }
