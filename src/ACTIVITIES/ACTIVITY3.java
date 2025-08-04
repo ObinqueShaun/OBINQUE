@@ -1,4 +1,4 @@
-package bsit.pkg2a.obinuqe;
+package ACTIVITIES;
 
 
 public class ACTIVITY3 {
